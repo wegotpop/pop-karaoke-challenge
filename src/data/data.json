@@ -1,0 +1,28 @@
+{
+   "eras": [ "60s", "70s", "80s", "90s", "2000s", "2010s"],
+   "genres": [
+            "Rap/HipHop",
+            "Rock",
+            "Metal",
+            "Pop",
+            "Jazz",
+            "Country",
+            "Alternative",
+            "Soundtrack",
+            "Cheese",
+            "Electronic" ],
+   "challenges": [
+            "In the style of Elvis",
+            "Parents favourite song",
+            "Too high for me",
+            "Artist is Dead Famous(Deceased)",
+            "Disney tune",
+            "Sing in the style of opposite gender",
+            "Air guitar anthem",
+            "Dont know the words",
+            "Too old for this",
+            "Too young for this",
+            "This is out of my range",
+            "Title contains boy or girl",
+            "Crime based song"]
+}
