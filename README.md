@@ -1,2 +1,2 @@
 # pop-karaoke-challenge
-Christmas party challenge webapp project
+Christmas party challenge web app project
