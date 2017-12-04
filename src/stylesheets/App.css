@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  border: 12px solid #4b949f;
+  border-radius: 10px;
 }
 
 /*  Header Styles */
@@ -16,7 +18,10 @@
   height: 90px;
   padding: 20px;
   color: white;
-  background-color: #4b949f
+  background-color: #4b949f;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .App-title {
@@ -39,17 +44,43 @@
 #card-top-box {
   height: 150px;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top-left-radius: 10px;
 }
 
 #card-bottom-box {
   height: 150px;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span.challenge, span.era, span.genre {
+  font-size: 1.5em;
+  transform: rotate(-12deg);
+}
+
+hr {
+  transform: rotate(-12deg);
+  border: 0;
+  height: 5px;
+  background-color: #4b949f;
 }
 
 /*  footer styles */
 
-.app-footer {
+p.counter {
+  margin: 0 auto;
+  padding: 23px;
+}
 
+.app-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .next-button {

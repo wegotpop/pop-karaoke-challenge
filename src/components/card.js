@@ -8,6 +8,7 @@ class Card extends Component {
         <div id="card-top-box">
           <span className="era">{this.props.era}</span> <span className="genre">{this.props.genre}</span>
         </div>
+        <hr></hr>
         <div id="card-bottom-box">
           <span className="challenge"> {this.props.challenge}</span>
         </div>
