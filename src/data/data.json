@@ -15,7 +15,7 @@
             "In the style of Elvis",
             "Parents favourite song",
             "Too high for me",
-            "Artist is Dead Famous(Deceased)",
+            "Artist is Dead Famous",
             "Disney tune",
             "Sing in the style of opposite gender",
             "Air guitar anthem",
@@ -24,5 +24,8 @@
             "Too young for this",
             "This is out of my range",
             "Title contains boy or girl",
-            "Crime based song"]
+            "Crime based song",
+            "Love song",
+            "Guilty pleasure",
+            "Shower song"]
 }

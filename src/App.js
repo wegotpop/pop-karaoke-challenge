@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import data from './data/data.json';
-import logo from './karaoke.svg';
 import Header from './components/header'
-import Button from './components/button'
+import Footer from './components/footer'
 import Card from './components/card'
 import './stylesheets/App.css';
 
@@ -37,13 +36,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="Box">
+      <div className="App">
         <Header />
         <Card
           era={this.state.era}
           genre={this.state.genre}
           challenge={this.state.challenge} />
-        <Button
+        <Footer
           onClick={() => this._handleClick()}
           totalClicks={this.state.totalClicks} />
       </div>

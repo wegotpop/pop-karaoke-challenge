@@ -4,12 +4,12 @@ class Card extends Component {
 
   render() {
     return (
-      <div className="card">
-        <div>
-          <span>{this.props.era}</span><span>{this.props.genre}</span>
+      <div className="card-wrapper">
+        <div id="card-top-box">
+          <span className="era">{this.props.era}</span> <span className="genre">{this.props.genre}</span>
         </div>
-        <div>
-          <span>{this.props.challenge}</span>
+        <div id="card-bottom-box">
+          <span className="challenge"> {this.props.challenge}</span>
         </div>
       </div>
     );
