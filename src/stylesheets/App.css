@@ -46,7 +46,6 @@
   border-radius: 10px;
   /*background: linear-gradient(-12deg, #FFB912 30%, #1f4f03 70%);*/
   border: 2px solid white;
-  /*background-image: url("http://www.wallfizz.com/art-design/noel/3983-flocons-de-neige-glace-WallFizz.jpg");*/
   background-image: url("http://st.gde-fon.com/wallpapers_original/315030_snezhinki_-sneg_-zima_1920x1200_www.Gde-Fon.com.jpg");
 }
 
@@ -70,7 +69,6 @@
 span.challenge, span.era, span.genre {
   font-size: 2em;
   transform: rotate(-12deg);
-  /*font-family: 'Baloo', cursive;*/
   font-family: 'Cantora One', sans-serif;
   color: #8c221b;
 }
@@ -100,6 +98,8 @@ p.counter {
   margin: 0 auto;
   padding: 15px;
   color: #fff;
+  font-family: 'Cantora One', sans-serif;
+  letter-spacing: 2px;
 }
 
 .app-footer {
