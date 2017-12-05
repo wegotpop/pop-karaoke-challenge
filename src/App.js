@@ -13,8 +13,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      era: 'Made',
-      genre: 'with love by',
+      // era: 'Made',
+      genre: 'Made with love by',
       challenge: 'Emilie & Olly',
       totalClicks: 0
     }
@@ -39,7 +39,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Card
-          era={this.state.era}
+          // era={this.state.era}
           genre={this.state.genre}
           challenge={this.state.challenge} />
         <Footer

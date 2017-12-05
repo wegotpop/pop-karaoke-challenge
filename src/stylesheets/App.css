@@ -20,7 +20,7 @@
 
 .App-header {
   height: 90px;
-  padding: 20px;
+  padding: 19px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -29,6 +29,7 @@
 .App-title {
   font-family: 'Bungee Shade', cursive;
   color: #fff;
+  padding-left: 14px;
 }
 
 @keyframes App-logo-spin {
@@ -40,12 +41,13 @@
 /*  Card Styles */
 
 .card-wrapper {
-  /*width: 100%;*/
   margin: 10px;
   background-color: #fff;
   border-radius: 10px;
-  background: linear-gradient(-12deg, #FFB912 40%, #1f4f03 60%);
+  /*background: linear-gradient(-12deg, #FFB912 30%, #1f4f03 70%);*/
   border: 2px solid white;
+  /*background-image: url("http://www.wallfizz.com/art-design/noel/3983-flocons-de-neige-glace-WallFizz.jpg");*/
+  background-image: url("http://hdpicturez.com/wp-content/uploads/2016/11/Snowflake-Wallpaper-Wide-1280x800.jpg");
 }
 
 #card-top-box {
@@ -66,11 +68,15 @@
 }
 
 span.challenge, span.era, span.genre {
-  font-size: 2.5em;
+  font-size: 2em;
   transform: rotate(-12deg);
   /*font-family: 'Baloo', cursive;*/
   font-family: 'Cantora One', sans-serif;
-  color: #fff;
+  color: #8c221b;
+}
+
+span.era, span.genre {
+  color: #1f4f03;
 }
 
 hr {
@@ -81,10 +87,10 @@ hr {
   width: 104%;
   background: repeating-linear-gradient(
     45deg,
-    #e0454f,
-    #e0454f 10px,
-    #eb5b68 10px,
-    #eb5b68 20px
+    #c33329,
+    #c33329 10px,
+    #ea3f33 10px,
+    #ea3f33 20px
   );
 }
 

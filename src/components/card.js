@@ -6,7 +6,8 @@ class Card extends Component {
     return (
       <div className="card-wrapper">
         <div id="card-top-box">
-          <span className="era">{this.props.era}</span> <span className="genre">{this.props.genre}</span>
+          {/* <span className="era">{this.props.era}</span>  */}
+          <span className="genre">{this.props.genre}</span>
         </div>
         <hr></hr>
         <div id="card-bottom-box">
