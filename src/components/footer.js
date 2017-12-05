@@ -8,7 +8,7 @@ class Footer extends Component {
       <button className="next-button"onClick={this.props.onClick}>
         <span className='button'>Next Challenge</span>
       </button>
-      <p className="counter">{this.props.totalClicks} Completed</p>
+      <p className="counter">{this.props.totalClicks} Challenges Completed</p>
     </div>
     );
   }

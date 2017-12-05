@@ -1,7 +1,13 @@
 .App {
   text-align: center;
-  border: 12px solid #4b949f;
   border-radius: 10px;
+  background: repeating-linear-gradient(
+    45deg,
+    #e0454f,
+    #e0454f 10px,
+    #eb5b68 10px,
+    #eb5b68 21px
+  );
 }
 
 /*  Header Styles */
@@ -14,18 +20,16 @@
 }
 
 .App-header {
-  background-color: #222;
   height: 90px;
   padding: 20px;
-  color: white;
-  background-color: #4b949f;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .App-title {
-  position: relative;
+  font-family: 'Bungee Shade', cursive;
+  color: #fff;
 }
 
 @keyframes App-logo-spin {
@@ -37,8 +41,12 @@
 /*  Card Styles */
 
 .card-wrapper {
-  width: 100%;
-  margin: 0 auto;
+  /*width: 100%;*/
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  background: linear-gradient(-12deg, #14CAD4 35%, #00CC33 65%);
+  border: 2px solid white;
 }
 
 #card-top-box {
@@ -59,22 +67,34 @@
 }
 
 span.challenge, span.era, span.genre {
-  font-size: 1.5em;
+  font-size: 2.5em;
   transform: rotate(-12deg);
+  /*font-family: 'Baloo', cursive;*/
+  font-family: 'Cantora One', sans-serif;
+  color: #fff;
 }
 
 hr {
   transform: rotate(-12deg);
   border: 0;
   height: 5px;
-  background-color: #4b949f;
+  margin-left: -6px;
+  width: 104%;
+  background: repeating-linear-gradient(
+    45deg,
+    #e0454f,
+    #e0454f 10px,
+    #eb5b68 10px,
+    #eb5b68 20px
+  );
 }
 
 /*  footer styles */
 
 p.counter {
   margin: 0 auto;
-  padding: 23px;
+  padding: 15px;
+  color: #fff;
 }
 
 .app-footer {
@@ -84,27 +104,23 @@ p.counter {
 }
 
 .next-button {
-  float: left;
-  display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 20px;
+  margin: 10px;
   font-size: 24px;
   cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4b949f;
-  border: none;
+  color: #418008;
+  background-color: #fff;
+  border: 1px solid #418008;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 4px 6px 0px -1px rgba(65,128,8,1);
+  font-family: 'Mountains of Christmas', cursive;
+  font-weight: 700;
+  letter-spacing: 5px;
 }
 
 .next-button:active {
-  background-color: #4b949f;
+  background-color: #418008;
+  color: #fff;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-}
-
-.counter {
-  width: 50%;
 }
