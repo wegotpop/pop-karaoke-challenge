@@ -55,7 +55,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   border-top-left-radius: 10px;
 }
 
