@@ -13,9 +13,9 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      era: '',
-      genre: '',
-      challlenge: '',
+      era: 'Made',
+      genre: 'with love by',
+      challenge: 'Emilie & Olly',
       totalClicks: 0
     }
   }

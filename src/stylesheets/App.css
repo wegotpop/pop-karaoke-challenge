@@ -1,12 +1,11 @@
 .App {
   text-align: center;
-  border-radius: 10px;
   background: repeating-linear-gradient(
     45deg,
-    #e0454f,
-    #e0454f 10px,
-    #eb5b68 10px,
-    #eb5b68 21px
+    #c33329,
+    #c33329 10px,
+    #ea3f33 10px,
+    #ea3f33 21px
   );
 }
 
@@ -45,7 +44,7 @@
   margin: 10px;
   background-color: #fff;
   border-radius: 10px;
-  background: linear-gradient(-12deg, #14CAD4 35%, #00CC33 65%);
+  background: linear-gradient(-12deg, #FFB912 40%, #1f4f03 60%);
   border: 2px solid white;
 }
 
@@ -108,18 +107,18 @@ p.counter {
   margin: 10px;
   font-size: 24px;
   cursor: pointer;
-  color: #418008;
+  color: #1f4f03;
   background-color: #fff;
-  border: 1px solid #418008;
+  border: 1px solid #1f4f03;
   border-radius: 15px;
-  box-shadow: 4px 6px 0px -1px rgba(65,128,8,1);
+  box-shadow: 4px 6px 0px -1px rgba(31,79,3,1);
   font-family: 'Mountains of Christmas', cursive;
   font-weight: 700;
   letter-spacing: 5px;
 }
 
 .next-button:active {
-  background-color: #418008;
+  background-color: #1f4f03;
   color: #fff;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
