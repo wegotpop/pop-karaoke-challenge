@@ -21,7 +21,11 @@
             "90's Country",
             "2000's Country",
             "Funk/Soul",
-            "60's Pop"
+            "60's Pop",
+            "80's Pop",
+            "90's Pop",
+            "2000's Pop",
+            "2010's Pop"
             ],
    "challenges": [
             "In the style of Elvis",
@@ -39,5 +43,13 @@
             "Crime based song",
             "Love song",
             "Guilty pleasure",
-            "Shower song"]
+            "Shower song",
+            "Artist begins with B",
+            "Artist begins with A",
+            "Artist begins with S",
+            "Artist begins with R",
+            "Artist begins with F",
+            "This contains girl or boy",
+            "In the style of Bee Gees"
+          ]
 }
