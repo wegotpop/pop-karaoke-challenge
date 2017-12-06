@@ -25,7 +25,8 @@
             "90's Pop",
             "2000's Pop",
             "2010's Pop",
-            "Musical"
+            "Musical",
+            "Dance"
             ],
    "challenges": [
             "In the style of Elvis",
@@ -73,6 +74,8 @@
             "Spoken, not sung",
             "Way too fast!",
             "Lullaby",
-            "Duet"
+            "Duet",
+            "Singer songwriter",
+            "Cover"
           ]
 }
