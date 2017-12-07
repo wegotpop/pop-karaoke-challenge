@@ -5,9 +5,11 @@ import Footer from './components/footer'
 import Card from './components/card'
 import './stylesheets/App.css';
 
-const eras = data.eras
-const genres = data.genres
-const challenges = data.challenges
+const eras = data.eras;
+const genres = data.genres;
+const challenges = data.challenges;
+let lastGenreSelected = 0;
+let lastChallengeSelected = 0;
 
 class App extends Component {
   constructor(props) {
@@ -25,11 +27,20 @@ class App extends Component {
 
     const total = this.state.totalClicks;
     const completedChallenge = this.state.complete;
-    const genreSelect = genres[Math.floor(Math.random() * genres.length)];
-    const challengeSelect = challenges[Math.floor(Math.random() * challenges.length)];
+    let genreSelect = genres[Math.floor(Math.random() * genres.length)];
+    let challengeSelect = challenges[Math.floor(Math.random() * challenges.length)];
     const eraSelect = eras[Math.floor(Math.random() * eras.length)];
 
-        console.log(total);
+    while(genreSelect === lastGenreSelected) {
+      genreSelect = genres[Math.floor(Math.random() * genres.length)];
+    }
+    lastGenreSelected = genreSelect;
+
+    while(challengeSelect === lastChallengeSelected) {
+      challengeSelect = challenges[Math.floor(Math.random() * challenges.length)];
+    }
+    lastChallengeSelected = challengeSelect;
+
     this.setState(
       { totalClicks: total + 1,
         era: eraSelect,
