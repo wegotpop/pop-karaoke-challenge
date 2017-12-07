@@ -16,22 +16,32 @@ class App extends Component {
       // era: 'Made',
       genre: 'Made with love by',
       challenge: 'Emilie & Olly',
-      totalClicks: 0
+      totalClicks: 0,
+      complete: 0
     }
   }
+
   _handleClick = (e) => {
 
-    const total = this.state.totalClicks
+    const total = this.state.totalClicks;
+    const completedChallenge = this.state.complete;
     const genreSelect = genres[Math.floor(Math.random() * genres.length)];
     const challengeSelect = challenges[Math.floor(Math.random() * challenges.length)];
     const eraSelect = eras[Math.floor(Math.random() * eras.length)];
 
+        console.log(total);
     this.setState(
       { totalClicks: total + 1,
         era: eraSelect,
         genre: genreSelect,
         challenge: challengeSelect,
       });
+
+    if (total >= 1 ){
+      this.setState({
+        complete: completedChallenge + 1
+      })
+    }
   }
 
   render() {
@@ -44,7 +54,7 @@ class App extends Component {
           challenge={this.state.challenge} />
         <Footer
           onClick={() => this._handleClick()}
-          totalClicks={this.state.totalClicks} />
+          totalClicks={this.state.complete} />
       </div>
     );
   }
