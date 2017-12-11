@@ -19,7 +19,8 @@ class App extends Component {
       genre: 'Made with love by',
       challenge: 'Emilie & Olly',
       totalClicks: 0,
-      complete: 0
+      complete: 0,
+      startButton: 'Start'
     }
   }
 
@@ -46,6 +47,7 @@ class App extends Component {
         era: eraSelect,
         genre: genreSelect,
         challenge: challengeSelect,
+        startButton: 'Next Challenge'
       });
 
     if (total >= 1 ){
@@ -65,6 +67,7 @@ class App extends Component {
           challenge={this.state.challenge} />
         <Footer
           onClick={() => this._handleClick()}
+          startButton={this.state.startButton}
           totalClicks={this.state.complete} />
       </div>
     );
