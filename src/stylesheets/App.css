@@ -1,25 +1,19 @@
 .App {
   text-align: center;
-  background: repeating-linear-gradient(
-    45deg,
-    #c33329,
-    #c33329 10px,
-    #ea3f33 10px,
-    #ea3f33 21px
-  );
+  background: #ff8900;
 }
 
 /*  Header Styles */
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: Logo-pulse infinite 2s linear;
   height: 80px;
   margin: 10px;
   float: left;
 }
 
 .App-header {
-  height: 90px;
+  height: 70px;
   padding: 19px;
   display: flex;
   justify-content: space-evenly;
@@ -30,23 +24,31 @@
   font-family: 'Bungee Shade', cursive;
   color: #fff;
   padding-left: 14px;
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes Logo-pulse {
+  from { transform: scale(1); }
+  50% { transform: scale(0.85); }
+  to { transform: scale(1); }
+}
+@keyframes Face-spin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
 }
 
 
 /*  Card Styles */
 
 .card-wrapper {
-  margin: 10px;
+  margin: 5px;
   background-color: #fff;
   border-radius: 10px;
   /*background: linear-gradient(-12deg, #FFB912 30%, #1f4f03 70%);*/
   border: 2px solid white;
-  background-image: url("http://st.gde-fon.com/wallpapers_original/315030_snezhinki_-sneg_-zima_1920x1200_www.Gde-Fon.com.jpg");
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
 }
 
 #card-top-box {
@@ -59,39 +61,43 @@
 }
 
 #card-bottom-box {
-  height: 150px;
+  height: 120px;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.card__face{
+    animation: Face-spin infinite 20s linear;
+    height: 12rem;
+    width: 12rem;
+    position: inherit;
+    z-index: 5;
+}
+
 span.challenge, span.genre {
-  font-size: 2.5em;
+  font-size: 2rem;
   transform: rotate(-12deg);
-  font-family: 'Mountains of Christmas', cursive;
-  color: #8c221b;
+  color: #fff;
   font-weight: bolder;
 }
 
-span.genre {
-  color: #1f4f03;
+.hr {
+  position: relative;
+  height: 13rem;
 }
-
-hr {
+.hr-line {
   transform: rotate(-12deg);
   border: 0;
   height: 5px;
   margin-left: -6px;
   width: 104%;
-  background: repeating-linear-gradient(
-    45deg,
-    #c33329,
-    #c33329 10px,
-    #ea3f33 10px,
-    #ea3f33 20px
-  );
+  background: #ff8900;
+  position: absolute;
+  bottom: 100px;
 }
+
 
 /*  footer styles */
 
@@ -99,7 +105,6 @@ p.counter {
   margin: 0 auto;
   padding: 15px;
   color: #fff;
-  font-family: 'Cantora One', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -114,18 +119,17 @@ p.counter {
   margin: 10px;
   font-size: 24px;
   cursor: pointer;
-  color: #1f4f03;
+  color: orange;
   background-color: #fff;
-  border: 1px solid #1f4f03;
+  border: 1px solid purple;
   border-radius: 15px;
-  box-shadow: -4px 6px 0px -1px rgba(31,79,3,1);
-  font-family: 'Mountains of Christmas', cursive;
+  box-shadow: -4px 6px 0px -1px purple;
   font-weight: 700;
   letter-spacing: 5px;
 }
 
 .next-button:active {
-  background-color: #1f4f03;
+  background-color: purple;
   color: #fff;
   box-shadow: 0 5px #666;
   transform: translateY(4px);

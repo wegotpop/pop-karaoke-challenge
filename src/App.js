@@ -16,8 +16,8 @@ class App extends Component {
     super(props);
     this.state = {
       // era: 'Made',
-      genre: 'Made with love by',
-      challenge: 'Emilie & Olly',
+      genre: 'Can you beat',
+      challenge: 'The king of karaoke?',
       totalClicks: 0,
       complete: 0,
       startButton: 'Start'
@@ -60,9 +60,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header title="Rees' Pieces"/>
         <Card
-          // era={this.state.era}
           genre={this.state.genre}
           challenge={this.state.challenge} />
         <Footer
