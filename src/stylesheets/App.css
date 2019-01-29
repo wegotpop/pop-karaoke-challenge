@@ -6,7 +6,7 @@
 /*  Header Styles */
 
 .App-logo {
-  animation: Logo-pulse infinite 5s linear;
+  animation: Logo-pulse infinite 2s linear;
   height: 80px;
   margin: 10px;
   float: left;
@@ -28,15 +28,9 @@
 }
 
 @keyframes Logo-pulse {
-  0% { 
-    transform: scale(.3); 
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(.3%);
-  }
+  from { transform: scale(1); }
+  50% { transform: scale(0.85); }
+  to { transform: scale(1); }
 }
 @keyframes Face-spin {
   from { transform: rotate(360deg); }

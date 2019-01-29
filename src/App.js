@@ -60,7 +60,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header title="Rees' Pieces"/>
         <Card
           genre={this.state.genre}
           challenge={this.state.challenge} />
